@@ -1,0 +1,410 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Reload · Swoole Portal</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="nuxseme">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="styles/website.css">
+        
+    
+
+        
+    
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    
+        <link rel="shortcut icon" href='assets/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='assets/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="apple-touch-icon" href='assets/favicon.ico'>
+    
+    
+        
+        <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon.png">
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon.png">
+        
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"nuxseme","repo":"swoole-portal","type":"star","size":"small","count":true}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2" data-path="reload.html">
+            
+                <a href="reload.html">
+            
+                    
+                    Reload
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Reload</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#reload"><b></b>reload</a></li></ul></div><a href="#reload" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="reload"><a name="reload" class="anchor-navigation-ex-anchor" href="#reload"><i class="fa fa-link" aria-hidden="true"></i></a><a name="reload" class="plugin-anchor" href="#reload"><i class="fa fa-link" aria-hidden="true"></i></a>reload</h1>
+<p>&#x5728;&#x6211;&#x4EEC;&#x4FEE;&#x6539;&#x4E86; PHP &#x4EE3;&#x7801;&#x540E;&#x7ECF;&#x5E38;&#x9700;&#x8981;&#x91CD;&#x542F;&#x670D;&#x52A1;&#x8BA9;&#x4EE3;&#x7801;&#x751F;&#x6548;&#xFF0C;&#x4E00;&#x53F0;&#x7E41;&#x5FD9;&#x7684;&#x540E;&#x7AEF;&#x670D;&#x52A1;&#x5668;&#x968F;&#x65F6;&#x90FD;&#x5728;&#x5904;&#x7406;&#x8BF7;&#x6C42;&#xFF0C;&#x5982;&#x679C;&#x7BA1;&#x7406;&#x5458;&#x901A;&#x8FC7; <code>kill</code> &#x8FDB;&#x7A0B;&#x65B9;&#x5F0F;&#x6765;&#x7EC8;&#x6B62; / &#x91CD;&#x542F;&#x670D;&#x52A1;&#x5668;&#x7A0B;&#x5E8F;&#xFF0C;&#x53EF;&#x80FD;&#x5BFC;&#x81F4;&#x521A;&#x597D;&#x4EE3;&#x7801;&#x6267;&#x884C;&#x5230;&#x4E00;&#x534A;&#x7EC8;&#x6B62;&#xFF0C;&#x6CA1;&#x6CD5;&#x4FDD;&#x8BC1;&#x6574;&#x4E2A;&#x4E1A;&#x52A1;&#x903B;&#x8F91;&#x7684;&#x5B8C;&#x6574;&#x6027;&#x3002;</p>
+<p><code>Swoole</code> &#x63D0;&#x4F9B;&#x4E86;&#x67D4;&#x6027;&#x7EC8;&#x6B62; / &#x91CD;&#x542F;&#x7684;&#x673A;&#x5236;&#xFF0C;&#x7BA1;&#x7406;&#x5458;&#x53EA;&#x9700;&#x8981;&#x5411; <code>Server</code> &#x53D1;&#x9001;&#x7279;&#x5B9A;&#x7684;&#x4FE1;&#x53F7;&#x6216;&#x8005;&#x8C03;&#x7528; <code>reload</code> &#x65B9;&#x6CD5;&#xFF0C;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#x5C31;&#x53EF;&#x4EE5;&#x7ED3;&#x675F;&#xFF0C;&#x5E76;&#x91CD;&#x65B0;&#x62C9;&#x8D77;&#x3002;<a href="https://wiki.swoole.com/#/server/methods?id=reload" target="_blank">&#x5177;&#x4F53;&#x8BF7;&#x53C2;&#x8003; reload ()</a></p>
+<p>&#x4F46;&#x6709;&#x51E0;&#x70B9;&#x8981;&#x6CE8;&#x610F;&#xFF1A;</p>
+<p>&#x9996;&#x5148;&#x8981;&#x6CE8;&#x610F;&#x65B0;&#x4FEE;&#x6539;&#x7684;&#x4EE3;&#x7801;&#x5FC5;&#x987B;&#x8981;&#x5728; <code>OnWorkerStart</code> &#x4E8B;&#x4EF6;&#x4E2D;&#x91CD;&#x65B0;&#x8F7D;&#x5165;&#x624D;&#x4F1A;&#x751F;&#x6548;&#xFF0C;&#x6BD4;&#x5982;&#x67D0;&#x4E2A;&#x7C7B;&#x5728; <code>OnWorkerStart</code> &#x4E4B;&#x524D;&#x5C31;&#x901A;&#x8FC7; composer &#x7684; autoload &#x8F7D;&#x5165;&#x4E86;&#x5C31;&#x662F;&#x4E0D;&#x53EF;&#x4EE5;&#x7684;&#x3002;</p>
+<p>&#x5176;&#x6B21; <code>reload</code> &#x8FD8;&#x8981;&#x914D;&#x5408;&#x8FD9;&#x4E24;&#x4E2A;&#x53C2;&#x6570; <a href="https://wiki.swoole.com/#/server/setting?id=max_wait_time" target="_blank">max_wait_time</a> &#x548C; <a href="https://wiki.swoole.com/#/server/setting?id=reload_async" target="_blank">reload_async</a>&#xFF0C;&#x8BBE;&#x7F6E;&#x4E86;&#x8FD9;&#x4E24;&#x4E2A;&#x53C2;&#x6570;&#x4E4B;&#x540E;&#x5C31;&#x80FD;&#x5B9E;&#x73B0;<code>&#x5F02;&#x6B65;&#x5B89;&#x5168;&#x91CD;&#x542F;</code>&#x3002;</p>
+<p>&#x5982;&#x679C;&#x6CA1;&#x6709;&#x6B64;&#x7279;&#x6027;&#xFF0C;Worker &#x8FDB;&#x7A0B;&#x6536;&#x5230;&#x91CD;&#x542F;&#x4FE1;&#x53F7;&#x6216;&#x8FBE;&#x5230; <a href="https://wiki.swoole.com/#/server/setting?id=max_request" target="_blank">max_request</a> &#x65F6;&#xFF0C;&#x4F1A;&#x7ACB;&#x5373;&#x505C;&#x6B62;&#x670D;&#x52A1;&#xFF0C;&#x8FD9;&#x65F6; <code>Worker</code> &#x8FDB;&#x7A0B;&#x5185;&#x53EF;&#x80FD;&#x4ECD;&#x7136;&#x6709;&#x4E8B;&#x4EF6;&#x76D1;&#x542C;&#xFF0C;&#x8FD9;&#x4E9B;&#x5F02;&#x6B65;&#x4EFB;&#x52A1;&#x5C06;&#x4F1A;&#x88AB;&#x4E22;&#x5F03;&#x3002;&#x8BBE;&#x7F6E;&#x4E0A;&#x8FF0;&#x53C2;&#x6570;&#x540E;&#x4F1A;&#x5148;&#x521B;&#x5EFA;&#x65B0;&#x7684; <code>Worker</code>&#xFF0C;&#x65E7;&#x7684; <code>Worker</code> &#x5728;&#x5B8C;&#x6210;&#x6240;&#x6709;&#x4E8B;&#x4EF6;&#x4E4B;&#x540E;&#x81EA;&#x884C;&#x9000;&#x51FA;&#xFF0C;&#x5373; reload_async&#x3002;</p>
+<p>&#x5982;&#x679C;&#x65E7;&#x7684; <code>Worker</code> &#x4E00;&#x76F4;&#x4E0D;&#x9000;&#x51FA;&#xFF0C;&#x5E95;&#x5C42;&#x8FD8;&#x589E;&#x52A0;&#x4E86;&#x4E00;&#x4E2A;&#x5B9A;&#x65F6;&#x5668;&#xFF0C;&#x5728;&#x7EA6;&#x5B9A;&#x7684;&#x65F6;&#x95F4; ( <a href="https://wiki.swoole.com/#/server/setting?id=max_wait_time" target="_blank">max_wait_time</a> &#x79D2;) &#x5185;&#x65E7;&#x7684; <code>Worker</code> &#x6CA1;&#x6709;&#x9000;&#x51FA;&#xFF0C;&#x5E95;&#x5C42;&#x4F1A;&#x5F3A;&#x884C;&#x7EC8;&#x6B62;&#x3002;</p>
+<p>&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+$serv = <span class="hljs-keyword">new</span> Swoole\Server(<span class="hljs-string">&quot;0.0.0.0&quot;</span>, <span class="hljs-number">9501</span>, SWOOLE_PROCESS);
+$serv-&gt;set(<span class="hljs-keyword">array</span>(
+    <span class="hljs-string">&apos;worker_num&apos;</span> =&gt; <span class="hljs-number">1</span>,
+    <span class="hljs-string">&apos;max_wait_time&apos;</span> =&gt; <span class="hljs-number">60</span>,
+    <span class="hljs-string">&apos;reload_async&apos;</span> =&gt; <span class="hljs-keyword">true</span>,
+));
+$serv-&gt;on(<span class="hljs-string">&apos;receive&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(Swoole\Server $serv, $fd, $reactor_id, $data)</span> </span>{
+
+    <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;[#&quot;</span> . $serv-&gt;worker_id . <span class="hljs-string">&quot;]\tClient[$fd] receive data: $data\n&quot;</span>;
+
+    Swoole\Timer::tick(<span class="hljs-number">5000</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">echo</span> <span class="hljs-string">&apos;tick&apos;</span>;
+    });
+});
+
+$serv-&gt;start();
+</code></pre>
+<p>&#x4F8B;&#x5982;&#x4E0A;&#x9762;&#x7684;&#x4EE3;&#x7801; &#x5982;&#x679C;&#x6CA1;&#x6709; reload_async &#x90A3;&#x4E48; onReceive &#x4E2D;&#x521B;&#x5EFA;&#x7684;&#x5B9A;&#x65F6;&#x5668;&#x5C06;&#x4E22;&#x5931;&#xFF0C;&#x6CA1;&#x6709;&#x673A;&#x4F1A;&#x5904;&#x7406;&#x5B9A;&#x65F6;&#x5668;&#x4E2D;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x3002;</p>
+<p>&#x505C;&#x6B62;</p>
+<p><code>SIGTERM</code>: &#x5411;&#x4E3B;&#x8FDB;&#x7A0B; / &#x7BA1;&#x7406;&#x8FDB;&#x7A0B;&#x53D1;&#x9001;&#x6B64;&#x4FE1;&#x53F7;&#x670D;&#x52A1;&#x5668;&#x5C06;&#x5B89;&#x5168;&#x7EC8;&#x6B62;</p>
+<p>&#x5728; PHP &#x4EE3;&#x7801;&#x4E2D;&#x53EF;&#x4EE5;&#x8C03;&#x7528; <code>$serv-&gt;shutdown()</code> &#x5B8C;&#x6210;&#x6B64;&#x64CD;&#x4F5C;</p>
+<p><code>SIGUSR1</code>: &#x5411;&#x4E3B;&#x8FDB;&#x7A0B; / &#x7BA1;&#x7406;&#x8FDB;&#x7A0B;&#x53D1;&#x9001; <code>SIGUSR1</code> &#x4FE1;&#x53F7;&#xFF0C;&#x5C06;&#x5E73;&#x7A33;&#x5730; <code>restart</code> &#x6240;&#x6709; <code>Worker</code> &#x8FDB;&#x7A0B;</p>
+<pre><code class="lang-bash"><span class="hljs-comment"># &#x91CD;&#x542F;&#x6240;&#x6709;worker&#x8FDB;&#x7A0B; </span>
+<span class="hljs-built_in">kill</span> -USR1 &#x4E3B;&#x8FDB;&#x7A0B;PID
+</code></pre>
+<p><code>SIGUSR2</code>: &#x5411;&#x4E3B;&#x8FDB;&#x7A0B; / &#x7BA1;&#x7406;&#x8FDB;&#x7A0B;&#x53D1;&#x9001; <code>SIGUSR2</code> &#x4FE1;&#x53F7;&#xFF0C;&#x5C06;&#x5E73;&#x7A33;&#x5730;&#x91CD;&#x542F;&#x6240;&#x6709; <code>Task</code> &#x8FDB;&#x7A0B;</p>
+<pre><code class="lang-bash"><span class="hljs-comment"># &#x4EC5;&#x91CD;&#x542F;task&#x8FDB;&#x7A0B; </span>
+<span class="hljs-built_in">kill</span> -USR2 &#x4E3B;&#x8FDB;&#x7A0B;PID
+</code></pre>
+<p>&#x5728; PHP &#x4EE3;&#x7801;&#x4E2D;&#x53EF;&#x4EE5;&#x8C03;&#x7528; <code>$serv-&gt;reload()</code> &#x5B8C;&#x6210;&#x6B64;&#x64CD;&#x4F5C;</p>
+<pre><code>bool $only_reload_taskworkrer
+</code></pre><ul>
+<li>&#x529F;&#x80FD;&#xFF1A;&#x662F;&#x5426;&#x4EC5;&#x91CD;&#x542F; <a href="https://wiki.swoole.com/#/learn?id=taskworker&#x8FDB;&#x7A0B;" target="_blank">Task &#x8FDB;&#x7A0B;</a></li>
+<li>&#x9ED8;&#x8BA4;&#x503C;&#xFF1A;false</li>
+<li>&#x5176;&#x5B83;&#x503C;&#xFF1A;&#x65E0;</li>
+</ul>
+<p><strong>Reload &#x6709;&#x6548;&#x8303;&#x56F4;</strong></p>
+<p><code>Reload</code> &#x64CD;&#x4F5C;&#x53EA;&#x80FD;&#x91CD;&#x65B0;&#x8F7D;&#x5165; <code>Worker</code> &#x8FDB;&#x7A0B;&#x542F;&#x52A8;&#x540E;&#x52A0;&#x8F7D;&#x7684; PHP &#x6587;&#x4EF6;&#xFF0C;&#x4F7F;&#x7528; <code>get_included_files</code> &#x51FD;&#x6570;&#x6765;&#x5217;&#x51FA;&#x54EA;&#x4E9B;&#x6587;&#x4EF6;&#x662F;&#x5728; <code>WorkerStart</code> &#x4E4B;&#x524D;&#x5C31;&#x52A0;&#x8F7D;&#x7684; PHP &#x6587;&#x4EF6;&#xFF0C;&#x5728;&#x6B64;&#x5217;&#x8868;&#x4E2D;&#x7684; PHP &#x6587;&#x4EF6;&#xFF0C;&#x5373;&#x4F7F;&#x8FDB;&#x884C;&#x4E86; <code>reload</code> &#x64CD;&#x4F5C;&#x4E5F;&#x65E0;&#x6CD5;&#x91CD;&#x65B0;&#x8F7D;&#x5165;&#x3002;&#x8981;&#x5173;&#x95ED;&#x670D;&#x52A1;&#x5668;&#x91CD;&#x65B0;&#x542F;&#x52A8;&#x624D;&#x80FD;&#x751F;&#x6548;&#x3002;</p>
+<pre><code class="lang-php">$serv-&gt;on(<span class="hljs-string">&apos;WorkerStart&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(Swoole\Server $server, int $workerId)</span> </span>{
+    var_dump(get_included_files()); <span class="hljs-comment">//&#x6B64;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x6587;&#x4EF6;&#x8868;&#x793A;&#x8FDB;&#x7A0B;&#x542F;&#x52A8;&#x524D;&#x5C31;&#x52A0;&#x8F7D;&#x4E86;&#xFF0C;&#x6240;&#x4EE5;&#x65E0;&#x6CD5;reload</span>
+});
+</code></pre>
+<p><strong>APC/OpCache</strong></p>
+<p>&#x5982;&#x679C; <code>PHP</code> &#x5F00;&#x542F;&#x4E86; <code>APC/OpCache</code>&#xFF0C;<code>reload</code> &#x91CD;&#x8F7D;&#x5165;&#x65F6;&#x4F1A;&#x53D7;&#x5230;&#x5F71;&#x54CD;&#xFF0C;&#x6709; <code>2</code> &#x79CD;&#x89E3;&#x51B3;&#x65B9;&#x6848;</p>
+<ul>
+<li>&#x6253;&#x5F00; <code>APC/OpCache</code> &#x7684; <code>stat</code> &#x68C0;&#x6D4B;&#xFF0C;&#x5982;&#x679C;&#x53D1;&#x73B0;&#x6587;&#x4EF6;&#x66F4;&#x65B0; <code>APC/OpCache</code> &#x4F1A;&#x81EA;&#x52A8;&#x66F4;&#x65B0; <code>OpCode</code></li>
+<li>&#x5728; <code>onWorkerStart</code> &#x4E2D;&#x52A0;&#x8F7D;&#x6587;&#x4EF6;&#xFF08;require&#x3001;include &#x7B49;&#x51FD;&#x6570;&#xFF09;&#x4E4B;&#x524D;&#x6267;&#x884C; <code>apc_clear_cache</code> &#x6216; <code>opcache_reset</code> &#x5237;&#x65B0; <code>OpCode</code> &#x7F13;&#x5B58;</li>
+</ul>
+<blockquote>
+<p> &#x5E73;&#x6ED1;&#x91CD;&#x542F;&#x53EA;&#x5BF9; <code>onWorkerStart</code> &#x6216; <a href="https://wiki.swoole.com/#/server/events?id=onreceive" target="_blank">onReceive</a> &#x7B49;&#x5728; <code>Worker</code> &#x8FDB;&#x7A0B;&#x4E2D; <code>include/require</code> &#x7684; PHP &#x6587;&#x4EF6;&#x6709;&#x6548;
+-<code>Server</code> &#x542F;&#x52A8;&#x524D;&#x5C31;&#x5DF2;&#x7ECF; <code>include/require</code> &#x7684; PHP &#x6587;&#x4EF6;&#xFF0C;&#x4E0D;&#x80FD;&#x901A;&#x8FC7;&#x5E73;&#x6ED1;&#x91CD;&#x542F;&#x91CD;&#x65B0;&#x52A0;&#x8F7D;
+- &#x5BF9;&#x4E8E; <code>Server</code> &#x7684;&#x914D;&#x7F6E;&#x5373; <code>$serv-&gt;set()</code> &#x4E2D;&#x4F20;&#x5165;&#x7684;&#x53C2;&#x6570;&#x8BBE;&#x7F6E;&#xFF0C;&#x5FC5;&#x987B;&#x5173;&#x95ED; / &#x91CD;&#x542F;&#x6574;&#x4E2A; <code>Server</code> &#x624D;&#x53EF;&#x4EE5;&#x91CD;&#x65B0;&#x52A0;&#x8F7D;
+-<code>Server</code> &#x53EF;&#x4EE5;&#x76D1;&#x542C;&#x4E00;&#x4E2A;&#x5185;&#x7F51;&#x7AEF;&#x53E3;&#xFF0C;&#x7136;&#x540E;&#x53EF;&#x4EE5;&#x63A5;&#x6536;&#x8FDC;&#x7A0B;&#x7684;&#x63A7;&#x5236;&#x547D;&#x4EE4;&#xFF0C;&#x53BB;&#x91CD;&#x542F;&#x6240;&#x6709; <code>Worker</code> &#x8FDB;&#x7A0B;</p>
+</blockquote>
+<p>&#x547D;&#x4EE4;&#x6A21;&#x5F0F;&#x53EF;&#x4EE5;grep&#x51FA;&#x4E3B;&#x8FDB;&#x7A0B;id &#x5BF9;&#x8FDB;&#x7A0B;&#x53D1;&#x8D77;&#x4FE1;&#x53F7;</p>
+<p>php&#x811A;&#x672C;&#x6A21;&#x5F0F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;reload,&#x76D1;&#x542C;&#x4E00;&#x4E2A;message&#x7AEF;&#x53E3;&#xFF0C;&#x53D1;&#x9001;&#x547D;&#x4EE4;&#x89E3;&#x6790;&#x5E76;&#x6267;&#x884C;&#x5BF9;&#x5E94;&#x7684;&#x6D41;&#x7A0B;</p>
+<p>OpCache  &#x63A8;&#x8350;&#x5F00;&#x542F;&#x81EA;&#x52A8;&#x66F4;&#x65B0;&#x68C0;&#x67E5;&#x914D;&#x7F6E;&#x9879;&#xFF0C;&#x6BCF;&#x6B21;reset&#x53EF;&#x80FD;&#x5BFC;&#x81F4;&#x5927;&#x91CF;&#x7684;&#x6587;&#x4EF6;&#x9700;&#x8981;&#x91CD;&#x5EFA;Opcache</p>
+<p>onWorkStart&#x7684;&#x6587;&#x4EF6;&#x66F4;&#x65B0;&#xFF0C;&#x5355;&#x53F0;&#x673A;&#x5668;&#x53EA;&#x80FD;&#x505C;&#x670D;&#x66F4;&#x65B0;</p>
+<p>&#x591A;&#x53F0;&#x673A;&#x5668;&#x53EF;&#x4EE5;&#x5207;&#x6362;&#x6D41;&#x91CF;&#x66F4;&#x65B0;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Introduction">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Reload","level":"1.2","depth":1,"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["search-pro","-toggle-chapters","chapter-fold","expandable-chapters","-sharing","splitter","expandable-chapters-small","anchors","github","github-buttons","-donate","sharing-plus","anchor-navigation-ex","favicon","copy-code-button"],"ignores":["node_modules","_book"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"chapter-fold":{},"github":{"url":"https://github.com/nuxseme/swoole-portal"},"splitter":{},"search-pro":{},"search":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"alipay":"","title":"","button":"赞赏","alipayText":" "},"fontsettings":{"theme":"night","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"favicon":{"shortcut":"assets/favicon.ico","bookmark":"assets/favicon.ico","appleTouch":"assets/favicon.ico","appleTouchMore":{"120x120":"assets/favicon.png","180x180":"assets/favicon.png"}},"github-buttons":{"buttons":[{"user":"nuxseme","repo":"swoole-portal","type":"star","size":"small","count":true}]},"expandable-chapters-small":{},"copy-code-button":{},"sharing":{"qq":false,"all":["google","facebook","weibo","twitter","qq","qzone","linkedin","pocket"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"expandable-chapters":{}},"theme":"default","author":"nuxseme","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"sortedBy":"-","disableTitleFormatting":false,"variables":{},"title":"Swoole Portal","language":"zh-hans","catalog":"all","links":{"Github":{"Github":"https://github.com/nuxseme/swoole-portal"}},"gitbook":"3.2.3","unchanged":[],"description":"Swoole","outputfile":"SUMMARY.md"},"file":{"path":"reload.md","mtime":"2020-06-11T07:46:47.183Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-11T07:47:59.073Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
